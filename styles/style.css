@@ -12,14 +12,14 @@ html {
 
 .page {
   background-color: #BAB58E;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1380px 1fr;
   block-size: 100%;
   font-family: "MontserratAlternates", sans-serif;
   font-size: 24px;
-  min-width: 1540px;
+  min-width: 1580px;
 }
-/*
+
 .container_sidebar {
   align-self: center;
 }
@@ -37,8 +37,45 @@ html {
   height: 70px;
   border: 1px solid black;
   border-radius: 20%;
+  background-color: transparent;
 }
-*/
+
+.button-profile {
+  background-image: url(../images/profile.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.button-books {
+  background-image: url(../images/book.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.button-theme {
+  background-image: url(../images/sun.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.button-info {
+  background-image: url(../images/question-mark.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.button-sound {
+  background-image: url(../images/sound-off.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.button-settings {
+  background-image: url(../images/settings.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .content {
   display: grid;
   grid-template-rows: 40px 40px 29px 1fr;
@@ -76,7 +113,7 @@ html {
 
 .text-box {
   width: 1380px;
-  height: 700px;
+  height: 750px;
   border: 1px solid black;
   border-radius: 10px;
 }
