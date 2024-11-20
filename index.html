@@ -4,20 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/menu.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <title>KeyDown</title>
   </head>
   <body class="page">
-    <div class="container_sidebar">
-      <aside class="sidebar">
-        <button class="button_sidebar button-profile"></button>
-        <button class="button_sidebar button-books"></button>
-        <button class="button_sidebar button-theme"></button>
-        <button class="button_sidebar button-info"></button>
-        <button class="button_sidebar button-sound"></button>
-        <button class="button_sidebar button-settings"></button>
-      </aside>
-    </div>
+    <aside class="sidebar">
+      <button class="button_sidebar button-profile"></button>
+      <button class="button_sidebar button-books"></button>
+      <button class="button_sidebar button-theme"></button>
+      <button class="button_sidebar button-info"></button>
+      <button class="button_sidebar button-sound"></button>
+      <button class="button_sidebar button-settings"></button>
+    </aside>
+    <!--
     <section class="content">
       <p class="content_username">username</p>
       <p class="book-name_current">Book name</p>
@@ -27,6 +28,49 @@
         <button class="chapter-nav_button">next chapter</button>
       </nav>
       <div class="text-box"></div>
+    </section> -->
+    <!--    ------------------Меню настроек------------------
+    <section class="additional_menu settings_menu">
+      <h2 class="menu_title">Settings</h2>
+      <form class="settings_form">
+        <label for="caret-style" class="settings_form_item"
+          >Caret style
+          <select id="caret-style" class="input">
+            <option>default</option>
+            <option>block</option>
+            <option>underline</option>
+          </select>
+        </label>
+        <label for="smooth-caret" class="settings_form_item"
+          >Smooth caret
+          <select id="smooth-caret" class="input">
+            <option>on</option>
+            <option>off</option>
+          </select>
+        </label>
+        <label for="font-size" class="settings_form_item"
+          >Font size
+          <input type="number" min="8" max="36" id="font-size" class="input"/>
+        </label>
+        <label for="language" class="settings_form_item"
+          >Language
+          <select id="language" class="input">
+            <option>english</option>
+            <option>russian</option>
+          </select>
+        </label>
+      </form>
+    </section>
+    -->
+    <section class="additional_menu books_menu">
+      <h2>My books</h2>
+      <ul class="books-list">
+        <li class="books-list_item">
+          <h3>Book name</h3>
+          <p>Author</p>
+          <p>chapters read</p>
+        </li>
+      </ul>
     </section>
   </body>
 </html>
