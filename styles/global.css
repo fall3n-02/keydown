@@ -9,3 +9,10 @@
 ul {
   list-style: none;
 }
+
+button {
+  border: none;
+  background-color: transparent;
+  font-size: inherit;
+  font-family: inherit;
+}
