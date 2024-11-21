@@ -1,15 +1,18 @@
 .menu {
-  width: 30vw;
   height: 100%;
   border: 2px solid black;
   border-radius: 0 20px 20px 0;
   display: flex;
   flex-direction: column;
+}
+
+.settings-menu {
+  width: 30vw;
   gap: 25vh;
   padding: 5vh 2vw;
 }
 
-.menu_form {
+.settings-menu_form {
   display: flex;
   flex-direction: column;
   gap: 5vh;
@@ -33,4 +36,41 @@
   border: 1px solid black;
   border-radius: 5px;
   height: 40px;
+}
+
+.books-menu {
+  width: 60vw;
+  gap: 20vh;
+  padding: 5vh 2vw;
+}
+
+.books-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1vh 1vw;
+}
+
+.books-list_item {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: .5vh;
+}
+
+.books-list_item:last-child p { 
+  text-align: center;
+  margin: auto;
+}
+
+.delete-book-button {
+  background-image: url(../images/delete.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 7%;
+  aspect-ratio: 1 / 1;
+  align-self: end;
 }
