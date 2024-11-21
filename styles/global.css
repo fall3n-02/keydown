@@ -12,7 +12,7 @@ ul {
 
 button {
   border: none;
-  background-color: transparent;
-  font-size: inherit;
   font-family: inherit;
+  font-size: inherit;
+  background-color: transparent;
 }

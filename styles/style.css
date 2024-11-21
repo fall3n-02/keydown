@@ -12,28 +12,28 @@ html {
 
 .content {
   display: grid;
-  height: 100%;
   grid-template-columns: 10% 80% 10%;
   grid-template-rows: 1fr;
+  height: 100%;
 }
 
 .sidebar {
   display: flex;
   flex-direction: column;
+  justify-self: center;
   gap: 2vw;
   align-self: center;
-  justify-self: center;
   width: 40%;
 }
 
 .sidebar_button {
-  aspect-ratio: 1 / 1;
-  background-color: transparent;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 80%;
   border: 1px solid black;
   border-radius: 20%;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+  aspect-ratio: 1 / 1;
 }
 
 .button-profile {
@@ -67,13 +67,13 @@ html {
 }
 
 .main_username {
-  font-size: 1.6em;
   font-weight: 600;
+  font-size: 1.6em;
 }
 
 .main_book-name-current {
-  font-size: 1.4em;
   justify-self: center;
+  font-size: 1.4em;
 }
 
 .chapter-nav {
@@ -84,8 +84,8 @@ html {
 }
 
 .chapter-nav_button {
-  text-decoration: underline;
   width: 180px;
+  text-decoration: underline;
 }
 
 .typing-box {
